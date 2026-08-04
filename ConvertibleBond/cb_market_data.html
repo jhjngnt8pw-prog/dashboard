@@ -158,7 +158,7 @@ table.display tbody tr.odd {
   <a class="home-link" href="#">← Back to Home</a>
   <h3>Market Data</h3>
   <p class="meta">
-    Bond Count – Latest Date: N/A | Total Records: 0
+    Bond Count – Latest Date: 2026-08-04 | Total Records: 5
   </p>
 </div>
 
@@ -167,26 +167,42 @@ table.display tbody tr.odd {
   <div class="col col-left">
 
     <h4 class="section-title">东方财富债券数量</h4>
-    <p style="color:#94a3b8;font-style:italic;">No data available.</p>
+    
+    <table id="bond-table" class="display compact stripe" style="width:100%;">
+    <thead><tr><th>日期</th><th>数量</th></tr></thead>
+    <tbody><tr><td>2026-08-04</td><td>1047</td></tr><tr><td>2026-08-03</td><td>1044</td></tr><tr><td>2026-08-01</td><td>1044</td></tr><tr><td>2026-07-31</td><td>1044</td></tr><tr><td>2026-07-30</td><td>1043</td></tr></tbody>
+    </table>
     <!-- Price table (see HTML comment below – placed in right column in the Dash app but here we
          keep the same structure where price is on the right and bond/risk/notice on the left) -->
     <h4 class="section-title mt">BarraOne Risk Data</h4>
-    <p style="color:#94a3b8;font-style:italic;">No data available.</p>
+    
+    <table id="risk-table" class="display compact stripe" style="width:100%;">
+    <thead><tr><th>日期</th><th>数量</th></tr></thead>
+    <tbody><tr><td>2026-08-03</td><td>301</td></tr><tr><td>2026-07-31</td><td>301</td></tr><tr><td>2026-07-30</td><td>303</td></tr><tr><td>2026-07-29</td><td>303</td></tr><tr><td>2026-07-28</td><td>306</td></tr></tbody>
+    </table>
 
     <h4 class="section-title mt">Notice Data</h4>
-    <p style="color:#94a3b8;font-style:italic;">No data available.</p>
+    
+    <table id="notice-table" class="display compact stripe" style="width:100%;">
+    <thead><tr><th>scrape_date</th><th>latest_publish_date</th><th>title</th><th>record_count</th></tr></thead>
+    <tbody><tr><td>2026-08-04</td><td>2026-08-03 17:45</td><td>立讯精密:关于股份回购进展情况的公告</td><td>570</td></tr><tr><td>2026-08-03</td><td>2026-07-31 20:48</td><td>宝莱特:关于筹划控制权变更的停牌公告</td><td>121</td></tr></tbody>
+    </table>
 
   </div>
 
   <!-- RIGHT COLUMN -->
   <div class="col col-right">
     <h4 class="section-title">债券价格</h4>
-    <p style="color:#94a3b8;font-style:italic;">No data available.</p>
+    
+    <table id="price-table" class="display compact stripe" style="width:100%;">
+    <thead><tr><th>日期</th><th>数量</th></tr></thead>
+    <tbody><tr><td>2026-08-04</td><td>302</td></tr><tr><td>2026-08-03</td><td>302</td></tr><tr><td>2026-07-31</td><td>303</td></tr><tr><td>2026-07-30</td><td>302</td></tr><tr><td>2026-07-29</td><td>302</td></tr></tbody>
+    </table>
   </div>
 </div>
 
 <div class="footer">
-  Generated: 2026-08-04 22:47:15
+  Generated: 2026-08-04 22:55:31
 </div>
 
 </div><!-- .container -->
