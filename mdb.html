@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MongoDB Status Report</title>
+<style>
+:root {
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-600: #475569;
+  --slate-900: #0f172a;
+  --blue-600: #2563eb;
+  --white: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(180deg, var(--slate-100) 0%, var(--slate-200) 100%);
+  min-height: 100vh;
+  padding: 16px;
+  color: var(--slate-900);
+}
+
+.container { max-width: 1440px; margin: 0 auto; }
+
+.header-card {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.header-card h1 { font-size: 20px; }
+
+.sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.section {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 16px 18px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.section h2 { font-size: 16px; margin-bottom: 12px; color: var(--blue-600); }
+.muted { color: var(--slate-600); font-weight: normal; }
+
+table.report { width: 100%; border-collapse: collapse; font-size: 14px; }
+table.report th, table.report td {
+  padding: 6px 10px;
+  border: 1px solid var(--slate-200);
+  text-align: left;
+}
+table.report thead th {
+  background: var(--slate-100);
+  color: var(--slate-900);
+  position: sticky;
+  top: 0;
+}
+table.report tbody tr:nth-child(even) { background: #f8fafc; }
+
+.empty { color: var(--slate-600); font-style: italic; }
+
+.footer { color: var(--slate-600); font-size: 12px; margin-top: 8px; }
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header-card">
+    <h1>MongoDB Status Report</h1>
+    <div class="muted">Generated: 2026-08-15 22:16:57</div>
+  </div>
+  <div class="sections"><div class="section"><h2>63<span class="muted"> / OPCN / OPrice</span></h2><table class="report"><thead><tr><th>date</th><th>close_mean</th><th>asset_id_count</th></tr></thead><tbody><tr><td>2026-08-14</td><td>0.2937</td><td>1,250</td></tr><tr><td>2026-08-13</td><td>0.2956</td><td>1,250</td></tr><tr><td>2026-08-12</td><td>0.2987</td><td>1,250</td></tr><tr><td>2026-08-11</td><td>0.3034</td><td>1,250</td></tr><tr><td>2026-08-10</td><td>0.3081</td><td>1,248</td></tr></tbody></table></div><div class="section"><h2>63<span class="muted"> / OPCN / IPrice</span></h2><table class="report"><thead><tr><th>date</th><th>close_mean</th><th>index_code_count</th></tr></thead><tbody><tr><td>2026-08-14</td><td>5,190.7790</td><td>3</td></tr><tr><td>2026-08-13</td><td>5,186.8180</td><td>3</td></tr><tr><td>2026-08-12</td><td>5,224.8700</td><td>3</td></tr><tr><td>2026-08-11</td><td>5,187.0857</td><td>3</td></tr><tr><td>2026-08-10</td><td>5,233.5690</td><td>3</td></tr></tbody></table></div><div class="section"><h2>63<span class="muted"> / OPCN / IBase</span></h2><table class="report"><thead><tr><th>date</th><th>cp_mean</th><th>stockCode_count</th></tr></thead><tbody><tr><td>2026-08-14</td><td>5,190.7800</td><td>3</td></tr><tr><td>2026-08-13</td><td>5,186.8167</td><td>3</td></tr><tr><td>2026-08-12</td><td>5,224.8733</td><td>3</td></tr><tr><td>2026-08-11</td><td>5,187.0867</td><td>3</td></tr><tr><td>2026-08-10</td><td>5,233.5667</td><td>3</td></tr></tbody></table></div><div class="section"><h2>63<span class="muted"> / OPCN / OContract</span></h2><table class="report"><thead><tr><th>dt</th><th>PreClose_mean</th><th>InstrumentName_count</th></tr></thead><tbody><tr><td>20,260,814</td><td>0.2956</td><td>1,250</td></tr><tr><td>20,260,813</td><td>0.2987</td><td>1,250</td></tr><tr><td>20,260,812</td><td>0.3034</td><td>1,250</td></tr><tr><td>20,260,811</td><td>0.3083</td><td>1,250</td></tr><tr><td>20,260,810</td><td>0.3124</td><td>1,246</td></tr></tbody></table></div><div class="section"><h2>222<span class="muted"> / OPCN / OPrice</span></h2><table class="report"><thead><tr><th>date</th><th>close_mean</th><th>asset_id_count</th></tr></thead><tbody><tr><td>2026-08-14</td><td>0.2937</td><td>1,250</td></tr><tr><td>2026-08-13</td><td>0.2956</td><td>1,250</td></tr><tr><td>2026-08-12</td><td>0.2987</td><td>1,250</td></tr><tr><td>2026-08-11</td><td>0.3034</td><td>1,250</td></tr><tr><td>2026-08-10</td><td>0.3081</td><td>1,248</td></tr></tbody></table></div><div class="section"><h2>222<span class="muted"> / OPCN / IPrice</span></h2><table class="report"><thead><tr><th>date</th><th>close_mean</th><th>index_code_count</th></tr></thead><tbody><tr><td>2026-08-14</td><td>5,190.7790</td><td>3</td></tr><tr><td>2026-08-13</td><td>5,186.8180</td><td>3</td></tr><tr><td>2026-08-12</td><td>5,224.8700</td><td>3</td></tr><tr><td>2026-08-11</td><td>5,187.0857</td><td>3</td></tr><tr><td>2026-08-10</td><td>5,233.5690</td><td>3</td></tr></tbody></table></div><div class="section"><h2>222<span class="muted"> / OPCN / IBase</span></h2><table class="report"><thead><tr><th>date</th><th>cp_mean</th><th>stockCode_count</th></tr></thead><tbody><tr><td>2026-08-14</td><td>5,190.7800</td><td>3</td></tr><tr><td>2026-08-13</td><td>5,186.8167</td><td>3</td></tr><tr><td>2026-08-12</td><td>5,224.8733</td><td>3</td></tr><tr><td>2026-08-11</td><td>5,187.0867</td><td>3</td></tr><tr><td>2026-08-10</td><td>5,233.5667</td><td>3</td></tr></tbody></table></div><div class="section"><h2>222<span class="muted"> / OPCN / OContract</span></h2><table class="report"><thead><tr><th>dt</th><th>PreClose_mean</th><th>InstrumentName_count</th></tr></thead><tbody><tr><td>20,260,814</td><td>0.2956</td><td>1,250</td></tr><tr><td>20,260,813</td><td>0.2987</td><td>1,250</td></tr><tr><td>20,260,812</td><td>0.3034</td><td>1,250</td></tr><tr><td>20,260,811</td><td>0.3083</td><td>1,250</td></tr><tr><td>20,260,810</td><td>0.3124</td><td>1,246</td></tr></tbody></table></div></div>
+  <div class="footer">Generated: 2026-08-15 22:16:57</div>
+</div>
+</body>
+</html>
