@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Convertible Bond – Holdings Notice</title>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-600: #475569;
+  --slate-900: #0f172a;
+  --blue-500: #3b82f6;
+  --indigo-50: #eef2ff;
+  --white: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "IBM Plex Sans", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(180deg, var(--slate-100) 0%, var(--slate-200) 100%);
+  min-height: 100vh;
+  padding: 16px;
+  color: var(--slate-900);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header-card {
+  padding: 16px 18px;
+  border: 1px solid var(--slate-200);
+  border-radius: 12px;
+  background: linear-gradient(120deg, var(--slate-50) 0%, var(--indigo-50) 100%);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  margin-bottom: 12px;
+}
+
+.header-card h3 { margin: 0 0 4px 0; font-size: 1.25rem; }
+.header-card .meta { color: var(--slate-600); font-size: 12px; }
+.header-card .home-link {
+  color: var(--blue-500);
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.section-title {
+  margin: 0 0 8px 0;
+  color: var(--slate-900);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+table.display {
+  border: 1px solid var(--slate-200) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08) !important;
+  background-color: var(--white) !important;
+  font-size: 12px !important;
+}
+
+table.display thead th {
+  font-weight: 600 !important;
+  background-color: var(--slate-900) !important;
+  color: var(--slate-50) !important;
+  border-bottom: 1px solid var(--slate-900) !important;
+  letter-spacing: 0.2px !important;
+  padding: 6px 8px !important;
+  text-align: left !important;
+  white-space: nowrap !important;
+}
+
+table.display tbody td {
+  padding: 6px 8px !important;
+  border-bottom: 1px solid #edf2f7 !important;
+  text-align: left !important;
+  white-space: nowrap !important;
+}
+
+table.display tbody tr.odd {
+  background-color: var(--slate-50) !important;
+}
+
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info {
+  font-size: 12px !important;
+  margin-bottom: 6px !important;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  border: 1px solid var(--slate-200);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  font-size: 12px !important;
+  padding: 4px 10px !important;
+  border-radius: 6px !important;
+}
+
+.no-data {
+  color: #94a3b8;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.footer {
+  text-align: right;
+  font-size: 11px;
+  color: var(--slate-600);
+  margin-top: 16px;
+  padding-top: 8px;
+  border-top: 1px solid var(--slate-200);
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header-card">
+  <a class="home-link" href="../index.html">← Back to Home</a>
+  <h3>可转债</h3>
+  <p class="meta">
+    Latest TradingDay: 2026-08-26 | 12
+  </p>
+</div>
+
+<h4 class="section-title">可转债</h4>
+<table id="holdings-notice-table" class="display compact stripe" style="width:100%;"><thead><tr><th>asset_id</th><th>债券名称</th><th>股票</th><th>公告</th><th>日期</th><th>到期日</th></tr></thead><tbody><tr><td>110076.SH</td><td>华海转债</td><td>华海药业</td><td>华海药业:浙江华海药业股份有限公司关于子公司通过药品GMP符合性检查的公告</td><td>2026-08-19 17:46</td><td>2026-11-01</td></tr><tr><td>113042.SH</td><td>上银转债</td><td>上海银行</td><td>上海银行股份有限公司2025年度财务报表及审计报告</td><td>2026-08-18 14:42</td><td>2027-01-24</td></tr><tr><td>113043.SH</td><td>财通转债</td><td>财通证券</td><td>财通证券股份有限公司可转债转股进展暨股份变动公告</td><td>2026-07-01 16:54</td><td>2026-12-09</td></tr><tr><td>113051.SH</td><td>节能转债</td><td>节能风电</td><td>节能风电:中节能风力发电股份有限公司2026年上半年发电量完成情况公告</td><td>2026-07-10 15:34</td><td>2027-06-20</td></tr><tr><td>113056.SH</td><td>重银转债</td><td>重庆银行</td><td>重庆银行:第七届董事会第二十六次会议决议公告</td><td>2026-08-20 18:39</td><td>2028-03-22</td></tr><tr><td>113605.SH</td><td>大参转债</td><td>大参林</td><td>大参林医药集团股份有限公司可转债转股结果暨股份变动公告</td><td>2026-07-01 17:09</td><td>2026-10-21</td></tr><tr><td>123092.SZ</td><td>天壕转债</td><td>天壕能源</td><td>天壕能源:关于聘任公司证券事务代表的公告</td><td>2026-08-20 16:58</td><td>2026-12-23</td></tr><tr><td>127030.SZ</td><td>盛虹转债</td><td>东方盛虹</td><td>东方盛虹:关于检修装置复产的公告</td><td>2026-08-17 18:06</td><td>2027-03-21</td></tr><tr><td>127040.SZ</td><td>国泰转债</td><td>江苏国泰</td><td>江苏国泰:关于“质量回报双提升”行动方案的进展公告</td><td>2026-08-21 20:13</td><td>2027-07-06</td></tr><tr><td>127061.SZ</td><td>美锦转债</td><td>美锦能源</td><td>美锦能源:关于调剂担保额度及为控股子公司提供担保的进展公告</td><td>2026-08-14 16:47</td><td>2028-04-19</td></tr><tr><td>128134.SZ</td><td>鸿路转债</td><td>鸿路钢构</td><td>鸿路钢构:关于鸿路转债即将到期及停止交易的第一次提示性公告</td><td>2026-08-25 16:19</td><td>2026-10-08</td></tr><tr><td>128136.SZ</td><td>立讯转债</td><td>立讯精密</td><td>立讯精密工业股份有限公司2026年半年度报告</td><td>2026-08-25 11:02</td><td>2026-11-02</td></tr></tbody></table>
+
+<div class="footer">
+  Generated: 2026-08-26 19:18:21
+</div>
+
+</div><!-- .container -->
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script>
+$(document).ready(function () {
+  $("table.display").each(function () {
+    $(this).DataTable({
+      paging: true,
+      pageLength: 50,
+      searching: true,
+      ordering: true,
+      info: true,
+      lengthChange: false,
+      language: {
+        info: "Showing _START_ to _END_ of _TOTAL_",
+        search: "Search:",
+      },
+    });
+  });
+});
+
+</script>
+</body>
+</html>
