@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Data View</title>
+  <style>
+    :root {
+      --ink: #1b2430;
+      --muted: #5c6b7a;
+      --line: #d7dee7;
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --accent: #184e77;
+      --ok: #0f7b4c;
+      --err: #9b1c1c;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Calibri, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+    }
+    header {
+      background: var(--accent);
+      color: #fff;
+      padding: 1.25rem 2rem;
+    }
+    header p { margin: 0.35rem 0 0; opacity: 0.9; }
+    main { max-width: 1100px; margin: 1.5rem auto 3rem; padding: 0 1rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    h1, h2, h3 { margin-top: 0; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border-bottom: 1px solid var(--line); padding: 0.45rem 0.55rem; text-align: left; }
+    thead th { background: var(--accent); color: #fff; font-weight: 600; }
+    tr:nth-child(even) { background: #eef3f8; }
+    td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    .error { color: var(--err); background: #fde8e8; padding: 0.6rem 0.75rem; border-radius: 4px; }
+    .empty { color: var(--muted); font-style: italic; }
+    tr.error td { background: #fde8e8; }
+    .meta { color: var(--muted); font-size: 0.92rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>data view</h1>
+    <p>Risk analysis and performance attribution &mdash; 2026-09-12 07:13:24</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Summary</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Model</th><th>Portfolio</th><th>Risk date</th><th>Total risk</th>
+            <th>Start</th><th>End</th><th>Dates</th><th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class='ok'><td>AU</td><td>All</td><td>2026-09-08</td><td class='num'>14.038185</td><td>19-8月-2026</td><td>08-9月-2026</td><td class='num'>15</td><td>ok</td></tr>
+        </tbody>
+      </table>
+    </section>
+    
+<section class="card" id="AY-ALLASSET-0">
+  <h2>AU — All</h2>
+  
+  <table class="dataframe details">
+  <thead>
+    <tr style="text-align: right;">
+      <th>date</th>
+      <th>num_accepted</th>
+      <th>num_rejected</th>
+      <th>mkt_value</th>
+      <th>turnover</th>
+      <th>is_extrapolated</th>
+      <th>is_asset_level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2026-09-08</td>
+      <td>1,824</td>
+      <td>0</td>
+      <td>3,649,289,078,307.89</td>
+      <td>8,888,888</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>2026-09-07</td>
+      <td>1,825</td>
+      <td>0</td>
+      <td>3,653,959,905,653.26</td>
+      <td>0.00001646</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>2026-09-04</td>
+      <td>1,826</td>
+      <td>0</td>
+      <td>3,648,857,316,425.08</td>
+      <td>0.00000490</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>2026-09-03</td>
+      <td>1,829</td>
+      <td>0</td>
+      <td>3,637,894,081,467.07</td>
+      <td>0.00003186</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>2026-09-02</td>
+      <td>1,828</td>
+      <td>0</td>
+      <td>3,685,519,953,872.44</td>
+      <td>0.00000904</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+  </main>
+</body>
+</html>
