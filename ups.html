@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>UPS 监控</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<canvas id="chart" width="1000" height="500"></canvas>
+<script>
+const labels = ["2026-09-22 21:20:02", "2026-09-22 21:25:02", "2026-09-22 21:30:02", "2026-09-22 21:35:02", "2026-09-22 21:40:02", "2026-09-22 21:45:02", "2026-09-22 21:50:02", "2026-09-22 21:55:02", "2026-09-22 22:00:02", "2026-09-22 22:05:03", "2026-09-22 22:10:03", "2026-09-22 22:15:02", "2026-09-22 22:20:03", "2026-09-22 22:25:03", "2026-09-22 22:30:03", "2026-09-22 22:35:03", "2026-09-22 22:40:03"];
+const charge = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100];
+const runtimeMin = [61.45, 61.45, 61.45, 61.45, 61.45, 61.45, 61.45, 63.7, 72.75, 63.7, 72.75, 65.97, 63.7, 68.23, 70.48, 100.0, 63.7];
+new Chart(document.getElementById('chart'), {
+  type: 'line',
+  data: {
+    labels: labels,
+    datasets: [
+      {
+        label: 'battery.charge (%)',
+        data: charge,
+        yAxisID: 'yCharge',
+        borderColor: 'rgb(54, 162, 235)',
+        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        tension: 0.2
+      },
+      {
+        label: 'battery.runtime (min)',
+        data: runtimeMin,
+        yAxisID: 'yRuntime',
+        borderColor: 'rgb(255, 99, 132)',
+        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        tension: 0.2
+      }
+    ]
+  },
+  options: {
+    scales: {
+      yCharge: {
+        type: 'linear',
+        position: 'left',
+        title: { display: true, text: 'battery.charge (%)' }
+      },
+      yRuntime: {
+        type: 'linear',
+        position: 'right',
+        title: { display: true, text: 'battery.runtime (min)' },
+        grid: { drawOnChartArea: false }
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>
